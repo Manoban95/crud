@@ -25,6 +25,7 @@ Route::group(['middleware' => ['auth']],function(){
 
 	
 	Route::get('/books','BookController@index');
+	Route::post('/books','BookController@store');
 
 	Route::get('/categories','CategoryController@index')->name('categories');
 	Route::post('/categories','CategoryController@store');
